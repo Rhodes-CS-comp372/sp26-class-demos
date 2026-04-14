@@ -31,4 +31,7 @@ Giant Meteor is an **absorbing state** — once reached, the system stays there 
 | 2.2 | P(day after tomorrow = Sunny \| today = Rainy) | **0.04** |
 | 2.3 | P(Giant Meteor within 5 days \| today = Sunny) | **≈ 0.41** |
 
-All questions are answered in [`markov_chains.ipynb`](markov_chains.ipynb) using NumPy vector–matrix multiplication ($\mathbf{s}_{t+k} = \mathbf{s}_t \cdot T^k$). The notebook also includes a plot of P(Giant Meteor) over 30 time steps starting from a uniform distribution over the non-meteor states.
+All questions are answered in [`markov_chains.ipynb`](markov_chains.ipynb) using NumPy vector–matrix multiplication ($\mathbf{s}_{t+k} = \mathbf{s}_t \cdot T^k$). The notebook also includes:
+
+- A plot of P(Giant Meteor) over 50 time steps starting from a uniform distribution over the non-meteor states.
+- A **5-day weather forecast** driven by a configurable `initial_state` variable, displayed as styled weather cards (dominant state label, probability, and chance of rain for Cloudy/Rainy days) alongside a per-day probability distribution bar chart.
