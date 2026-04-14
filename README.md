@@ -1,1 +1,1 @@
-# sp26-class-demos
+# COMP 372 - Artificial Intelligence (In-Class Coding Demos) [SPRING 2026]
